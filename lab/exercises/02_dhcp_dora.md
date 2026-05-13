@@ -35,7 +35,12 @@ docker logs --tail 40 lab_dhcp_server
 
 ### 1. Tableau DORA
 
-Complétez en vous appuyant sur **votre propre capture**&nbsp;:
+Complétez en vous appuyant sur **votre propre capture**&nbsp;: 
+
+Capture d'écran des paquets DORA : 
+
+<img width="1025" height="260" alt="image" src="https://github.com/user-attachments/assets/485e31b4-c7e9-4819-8e54-e0aa6b668757" />
+
 
 | Étape       | Émetteur (IP src) | Destinataire (IP dst) | MAC src / dst | Options DHCP notables |
 | ----------- | ----------------- | --------------------- | ------------- | --------------------- |
