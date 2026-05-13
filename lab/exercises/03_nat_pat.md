@@ -70,8 +70,7 @@ Reply : Le tuple reply indique au routeur comment gérer le trafic de retour et 
 **Question A.2.** Quelle IP voit le serveur `internet` dans
 `access.log`&nbsp;? Pourquoi pas `172.20.1.50`&nbsp;?
 
-> 💬 **Votre réponse : Le serveur voit l'IP 172.20.0.254. Il ne voit pas l'adresse 172.20.1.50 car c'est une adresse privée non >routable sur le réseau externe. Le routeur a effectué une traduction de source (Source NAT), remplaçant l'IP du client par sa >propre >adresse IP publique pour permettre la communication avec le serveur.
->
+> 💬 **Votre réponse : Le serveur voit l'IP 172.20.0.254. Il ne voit pas l'adresse 172.20.1.50 car c'est une adresse privée non routable sur le réseau externe. Le routeur a effectué une traduction de source, remplaçant l'IP du client par sa propre adresse IP publique pour permettre la communication avec le serveur.
 
 
 **Question A.3.** Combien de **ports sources distincts** apparaissent
