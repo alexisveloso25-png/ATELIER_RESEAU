@@ -66,8 +66,11 @@ docker exec lab_client cat /etc/resolv.conf   # peut être vide si non géré pa
 Notez **l'IP attribuée, le masque, la passerelle, les DNS, la durée de bail**.
 
 > 💬 **Votre réponse :**
+> Configuration finale du client :
 >
-> _Remplacez ce texte par votre réponse (IP / masque / GW / DNS / bail)._
+> <img width="802" height="353" alt="image" src="https://github.com/user-attachments/assets/de86f887-9bc7-4c31-9f5f-ff07fd298d12" />
+>
+> 
 
 ### 3. Questions de réflexion
 
