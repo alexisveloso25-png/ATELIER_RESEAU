@@ -86,7 +86,7 @@ Notez **l'IP attribuée, le masque, la passerelle, les DNS, la durée de bail**.
 source** pour le Discover, alors que c'est une adresse non routable&nbsp;?
 Que se passerait-il avec n'importe quelle autre adresse&nbsp;?
 
-> 💬 **Votre réponse : Le client utilise 0.0.0.0 car il ne possède pas encore d'adresse IP au démarrage du processus. S'il >utilisait une autre adresse au hasard, cela pourrait créer des conflits sur le réseau ou empêcher les paquets d'être acceptés par le >serveur DHCP**
+> 💬 Votre réponse : Le client utilise 0.0.0.0 car il ne possède pas encore d'adresse IP au démarrage du processus. S'il utilisait >une autre adresse au hasard, cela pourrait créer des conflits sur le réseau ou empêcher les paquets d'être acceptés par le serveur >DHCP
 >
 > _Remplacez ce texte par votre réponse._
 
