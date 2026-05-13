@@ -1,4 +1,4 @@
-name: Deploy to PythonAnywhere (recursive upload)
+name: Deploy to PythonAnywhere (recursive upload) #
 
 on:
   push:
