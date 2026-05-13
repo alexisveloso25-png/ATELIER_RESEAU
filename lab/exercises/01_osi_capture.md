@@ -145,7 +145,7 @@ NAT (exercice 3), pointez-le vers le bon conteneur et le bon fichier :
 La trame 4 montre une requête HTTP complète traversant 4 couches : le client 172.20.1.50 envoie via Ethernet (MAC 7a:46:ce:08:66:01) un paquet IPv4 TCP sur le port 50300 → 80 avec les flags PSH+ACK, portant en couche applicative la méthode GET / en HTTP/1.1 émise par curl/7.88.1. 
 
 
-![alt text](image.png)
+<img width="1089" height="393" alt="image" src="https://github.com/user-attachments/assets/20f0297c-afad-4402-9e98-d0a6afa75970" />
 
 
 
@@ -154,7 +154,8 @@ La trame 4 montre une requête HTTP complète traversant 4 couches : le client 1
 La trame 1 est un paquet de contrôle TCP pur qui ne contient que 3 couches : le client 172.20.1.50 initie une connexion vers le port 80 avec le flag SYN et un numéro de séquence à 0, sans aucune donnée applicative — c'est pourquoi la couche 7 (HTTP) est absente.
 
 
- ![alt text](image-1.png)
+ <img width="1076" height="378" alt="image" src="https://github.com/user-attachments/assets/9048524a-d043-4656-828d-e2ee0b464ae4" />
+
 
 
 ## À rendre — répondez directement dans ce fichier
@@ -207,7 +208,8 @@ et indiquez **où** il faudrait capturer pour voir l'IP réécrite.
 >
 > Une commande permet cela : On y verra 172.20.0.254 comme IP source dans les paquets sortants.
 >
-> ![alt text](image-2.png)
+> <img width="1045" height="271" alt="image" src="https://github.com/user-attachments/assets/2b50ab0d-9a19-4623-b19e-8b9a6230a831" />
+
 > 
 
 **Question 3.** Lancez `curl -v https://...` vers un site HTTPS public
@@ -217,7 +219,8 @@ visibilité&nbsp;?
 
 > 💬 Votre réponse : Lancement de la commande -  La couche 6 (Présentation) apparaît clairement avec HTTPS : le handshake TLS 1.3 est entièrement visible
 >
-> ![alt text](image-3.png)
+> <img width="941" height="719" alt="image" src="https://github.com/user-attachments/assets/f0f6ea69-554f-40d6-8e7b-0abb8ef6288f" />
+
 >
 >En revanche, la couche 7 (Application) disparaît de la visibilité d'une capture tcpdump : les headers et le corps sont chiffrés par TLS et ne seraient plus lisibles, Seul curl -v peut les afficher ici car il opère au-dessus de TLS
 >
