@@ -46,10 +46,10 @@ Capture d'écran des paquets DORA :
 
 | Étape       | Émetteur (IP src) | Destinataire (IP dst) | MAC src / dst | Options DHCP notables |
 | ----------- | ----------------- | --------------------- | ------------- | --------------------- |
-| 1. Discover | `0.0.0.0`         | `255.255.255.255`     | …             | option 53 = …, option 55 = … |
-| 2. Offer    | …                 | …                     | …             | … |
-| 3. Request  | …                 | …                     | …             | … |
-| 4. ACK      | …                 | …                     | …             | … |
+| 1. Discover | `0.0.0.0`         | `255.255.255.255`     | `             | option 53 = …, option 55 = … |
+| 2. Offer    | `172.20.1.2`      | `172.20.1.133`         | `7a:46:ce:08:66:01`      | … |
+| 3. Request  | `0.0.0.0`         | `255.255.255.255`     | `7a:46:ce:08:66:01 / ff:f..`    | … |
+| 4. ACK      | `172.20.1.2`      | `172.20.1.133`         | `7a:46:ce:08:66:01`    | … |
 
 
 ### 2. Configuration finale du client
