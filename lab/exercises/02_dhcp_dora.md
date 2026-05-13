@@ -70,7 +70,15 @@ Notez **l'IP attribuée, le masque, la passerelle, les DNS, la durée de bail**.
 >
 > <img width="802" height="353" alt="image" src="https://github.com/user-attachments/assets/de86f887-9bc7-4c31-9f5f-ff07fd298d12" />
 >
-> 
+> IP attribuée : 172.20.1.133.
+>
+>Masque : /24 (ce qui correspond à 255.255.255.0).
+>
+>Passerelle (GW) : 172.20.1.254.
+>
+>DNS : 1.1.1.1 et 8.8.8.8.
+>
+>Durée de bail : 41637 seconde
 
 ### 3. Questions de réflexion
 
