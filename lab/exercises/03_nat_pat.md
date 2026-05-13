@@ -77,9 +77,7 @@ Reply : Le tuple reply indique au routeur comment gérer le trafic de retour et 
 côté NAT pour les 5 requêtes parallèles&nbsp;? Que se passerait-il avec
 65&nbsp;000 connexions simultanées&nbsp;? (donnez une borne théorique).
 
-> 💬 **Votre réponse :**
->
-> _Remplacez ce texte par votre réponse._
+> 💬 **Votre réponse : Avec 65 000 connexions, on atteindrait la saturation de la table NAT
 
 ## Partie B — Casser le NAT et réparer
 
