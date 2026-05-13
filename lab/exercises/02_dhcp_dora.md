@@ -88,21 +88,20 @@ Que se passerait-il avec n'importe quelle autre adresse&nbsp;?
 
 > 💬 Votre réponse : Le client utilise 0.0.0.0 car il ne possède pas encore d'adresse IP au démarrage du processus. S'il utilisait une autre adresse au hasard, cela pourrait créer des conflits sur le réseau ou empêcher les paquets d'être acceptés par le serveur DHCP
 
+Preuve du processus d'attribution (DORA) : "docker exec lab_client bash -c "dhclient -v eth0"
+
 
 **Question 2.** Pourquoi le **Request** est-il **rediffusé en broadcast**
 alors que le client connaît déjà l'IP du serveur après l'Offer&nbsp;?
 
-> 💬 **Votre réponse :**
->
-> _Remplacez ce texte par votre réponse._
+> 💬 Votre réponse :Le Request est envoyé en broadcast pour informer officiellement tous les serveurs DHCP présents sur le réseau. Cela permet au serveur choisi de confirmer l'attribution, tout en signalant aux autres serveurs qu'ils peuvent libérer les adresses 
+
 
 **Question 3.** À quoi sert le **transaction ID (xid)** présent dans les
 4 paquets&nbsp;? Que se passerait-il s'il était omis dans un réseau avec
 plusieurs serveurs DHCP&nbsp;?
 
-> 💬 **Votre réponse :**
->
-> _Remplacez ce texte par votre réponse._
+> 💬 Votre réponse : Le xid (identifiant de transaction) sert à lier les réponses du serveur aux demandes spécifiques du client. De plus, un client ne pourrait pas savoir si un paquet Offer ou ACK reçu est une réponse à sa propre requête ou à celle d'un autre ordinateur.
 
 **Question 4.** Que renvoie le serveur si vous demandez explicitement une
 adresse hors du pool (essayez `dhclient -v -s 172.20.1.99 eth0`)&nbsp;?
