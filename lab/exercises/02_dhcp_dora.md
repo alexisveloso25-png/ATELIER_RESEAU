@@ -37,11 +37,14 @@ docker logs --tail 40 lab_dhcp_server
 
 Complétez en vous appuyant sur **votre propre capture**&nbsp;: 
 
-Capture d'écran des paquets DORA : 
+Capture d'écran des paquets DORA :
+
+Affiche l'exécution de la commande dhclient où l'on voit le client passer par les quatre étapes et confirmer qu'il est "bound" (lié) à l'IP 172.20.1.133 : 
 
 <img width="1025" height="260" alt="image" src="https://github.com/user-attachments/assets/485e31b4-c7e9-4819-8e54-e0aa6b668757" />
 
-
+Fournit l'analyse tcpdump montrant la structure interne des paquets : 
+<img width="1030" height="741" alt="image" src="https://github.com/user-attachments/assets/d1e495ba-9495-4863-b9d0-f2b9687cea61" />
 
 
 | Étape       | Émetteur (IP src) | Destinataire (IP dst) | MAC src / dst | Options DHCP notables |
