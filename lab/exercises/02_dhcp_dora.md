@@ -107,15 +107,14 @@ plusieurs serveurs DHCP&nbsp;?
 adresse hors du pool (essayez `dhclient -v -s 172.20.1.99 eth0`)&nbsp;?
 Justifiez.
 
-> 💬 **Votre réponse :Le serveur renvoie un message DHCPNAK (Negative Acknowledgment). La justification est que l'adresse demandée (172.20.1.99) se trouve en dehors de la plage d'adresses autorisées définie dans la configuration du serveur (172.20.1.100 à 172.20.1.200).
+> 💬 Votre réponse :Le serveur renvoie un message DHCPNAK (Negative Acknowledgment). La justification est que l'adresse demandée (172.20.1.99) se trouve en dehors de la plage d'adresses autorisées définie dans la configuration du serveur (172.20.1.100 à 172.20.1.200).
 
 
 **Question 5.** La directive `dhcp-authoritative` est active sur notre
 serveur. Quel est son effet **comportemental** sur les NAK&nbsp;?
 
-> 💬 **Votre réponse :**
->
-> _Remplacez ce texte par votre réponse._
+> 💬 **Votre réponse :Le serveur envoie un NAK immédiat au lieu d'ignorer la requête. Cela force le client à abandonner une mauvaise IP et à recommencer tout de suite un cycle Discover.
+
 
 ### 4. Renouvellement de bail (T1/T2)
 
