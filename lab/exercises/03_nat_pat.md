@@ -47,9 +47,25 @@ docker logs --tail 20 lab_internet
 Annotez chaque champ&nbsp;: `src`, `dst`, `sport`, `dport`, **puis le
 second tuple** (reply), et expliquez ce que le tuple-reply signifie.
 
-> 💬 **Votre réponse :**
+> 💬 **Votre réponse : 
+> Voici deux lignes de la table conntrack
+> <img width="952" height="179" alt="image" src="https://github.com/user-attachments/assets/28ad90a2-3867-4f04-84a1-dc5cf94a62fc" />
 >
-> _Remplacez ce texte par votre réponse._
+>src=172.20.1.50 : IP source
+>
+>dst=172.20.0.10 : IP destination
+>
+>sport=43050 : Port source choisi par le client
+>
+>dport=80 : Port de destination
+>
+Reply : Le tuple reply indique au routeur comment gérer le trafic de retour et il traduit et le renvoyer vers le client privé 172.20.1.50:43050".
+>src=172.20.0.10 : IP source de la réponse
+>
+>dst=172.20.0.254 : IP de destination du retour
+>
+>dport=43050 : Le port sur lequel le routeur attend la réponse pour la rediriger
+
 
 **Question A.2.** Quelle IP voit le serveur `internet` dans
 `access.log`&nbsp;? Pourquoi pas `172.20.1.50`&nbsp;?
