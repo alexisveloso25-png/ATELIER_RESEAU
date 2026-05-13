@@ -122,6 +122,6 @@ Le bail est de 12&nbsp;h, T1 (renouvellement) à 6&nbsp;h, T2 (rebind) à 10&nbs
 En **2-3 phrases**, décrivez la différence entre un renouvellement T1 et
 un rebind T2 (destinataire du paquet, comportement attendu).
 
-> 💬 **Votre réponse :**
->
-> _Remplacez ce texte par votre réponse._
+> 💬 Votre réponse :T1 (6h) : Le client tente de renouveler son bail en contactant directement son serveur initial en unicast.
+
+T2 (10h30) : Si le serveur ne répond pas, le client envoie une demande en broadcast pour essayer de garder son IP via n'importe quel serveur DHCP disponible.
