@@ -46,10 +46,10 @@ Capture d'écran des paquets DORA :
 
 | Étape       | Émetteur (IP src) | Destinataire (IP dst) | MAC src / dst | Options DHCP notables |
 | ----------- | ----------------- | --------------------- | ------------- | --------------------- |
-| 1. Discover | `0.0.0.0`         | `255.255.255.255`     | `7a:46:ce:08:66:01`   | `option 53 = 1 , option 55 = …` |
-| 2. Offer    | `172.20.1.2`      | `172.20.1.133`         | `7a:46:ce:08:66:01`      |`option 53 = 2 , option 54 = 172.20.1.2 ` |
-| 3. Request  | `0.0.0.0`         | `255.255.255.255`     | `7a:46:ce:08:66:01 / ff:f..`    | `option 53 = 3 , option 50 =172.20.1.133, option 54 = 172.20.1.2 `|
-| 4. ACK      | `172.20.1.2`      | `172.20.1.133`         | `7a:46:ce:08:66:01`    | … |
+| 1. Discover | `0.0.0.0`         | `255.255.255.255`     | `7a:46:ce:08:66:01`   | `option 53 = Discover, option 12 = client, Option 55 = ....` |
+| 2. Offer    | `172.20.1.2`      | `172.20.1.133`         | `7a:46:ce:08:66:01`      |`option 53 = Offer , option 54 = 172.20.1.2, Option 51 = 43200s ` |
+| 3. Request  | `0.0.0.0`         | `255.255.255.255`     | `7a:46:ce:08:66:01 / ff:f..`    | `option 53 = Request , option 50 =172.20.1.133, option 54 = 172.20.1.2 `|
+| 4. ACK      | `172.20.1.2`      | `172.20.1.133`         | `7a:46:ce:08:66:01`    |`option 53 = ACK , option 1 = 255.255.255.0, option 3 = 172.20.1.254, Option 6 =  1.1.1.1, 8.8.8.8 `|
 
 
 ### 2. Configuration finale du client
